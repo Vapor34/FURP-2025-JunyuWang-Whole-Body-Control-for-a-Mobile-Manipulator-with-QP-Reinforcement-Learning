@@ -30,20 +30,44 @@
 
 <!-- =================  YOUR ENTRIES BELOW  ================= -->
 
-### Week 1 — YYYY-MM-DD
+### Week 1 — 2026-06-08
 
-**Attended this week's meeting:** Yes / No
+**Attended this week's meeting:** Yes 
 
 **Progress this week**
+- Created virtual env
 - Set up repository from the FURP template.
-- _..._
+- Learned basic of ROS2
+
 
 **Challenges & blockers**
-- _..._
+- NA
 
 **Next steps**
-- _..._
+- Launch Mujoco simulation and try to build communication of each nodes.
 
 **Hours spent (optional):**
 
 **Links (optional):**
+
+---
+## Week template — copy me
+
+### Week 2 — 2026-06-15
+
+**Attended this week's meeting:** Yes 
+
+**Progress this week**
+- _What did you actually do / finish?_
+
+**Challenges & blockers**
+- _What got in the way? What are you stuck on?_
+
+**Next steps**
+- _What will you do next week?_
+
+**Hours spent (optional):** _e.g. 6h_
+
+**Links (optional):** _commits, notebooks, docs, datasets..._
+
+---
