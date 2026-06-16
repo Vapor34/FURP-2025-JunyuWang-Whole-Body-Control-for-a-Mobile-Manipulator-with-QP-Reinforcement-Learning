@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" font-family="'Segoe UI',Arial,sans-serif">
+  <rect width="960" height="480" fill="#f7fafc" rx="14"/>
+  <text x="40" y="46" font-size="24" font-weight="700" fill="#1f2d4d">🧩 QP + RL Architecture</text>
+  <text x="40" y="72" font-size="14" fill="#5b6b85">RL augments the controller; the QP stays in the loop and always enforces constraints</text>
+
+  <defs>
+    <marker id="ag" markerWidth="11" markerHeight="11" refX="8" refY="3.5" orient="auto"><path d="M0 0 L8 3.5 L0 7 Z" fill="#1f2d4d"/></marker>
+    <marker id="ap" markerWidth="11" markerHeight="11" refX="8" refY="3.5" orient="auto"><path d="M0 0 L8 3.5 L0 7 Z" fill="#8A63D2"/></marker>
+  </defs>
+
+  <!-- task goal -->
+  <rect x="40" y="190" width="150" height="80" rx="12" fill="#ffffff" stroke="#FFB000" stroke-width="2.5"/>
+  <text x="115" y="226" text-anchor="middle" font-size="15" font-weight="700" fill="#9a6b00">🎯 Task Goal</text>
+  <text x="115" y="248" text-anchor="middle" font-size="12" fill="#5b6b85">what to do</text>
+
+  <!-- RL policy -->
+  <rect x="250" y="80" width="200" height="90" rx="12" fill="#f3eeff" stroke="#8A63D2" stroke-width="2.5"/>
+  <text x="350" y="118" text-anchor="middle" font-size="15" font-weight="700" fill="#6b46b0">🧠 RL Policy</text>
+  <text x="350" y="140" text-anchor="middle" font-size="12" fill="#5b6b85">residual / high-level</text>
+  <text x="350" y="158" text-anchor="middle" font-size="12" fill="#5b6b85">trained in simulation</text>
+
+  <!-- QP -->
+  <rect x="250" y="200" width="200" height="100" rx="12" fill="#e9fbfb" stroke="#36CFC9" stroke-width="3"/>
+  <text x="350" y="236" text-anchor="middle" font-size="15" font-weight="700" fill="#137a74">⚙️ QP Controller</text>
+  <text x="350" y="258" text-anchor="middle" font-size="12" fill="#5b6b85">SAFETY LAYER</text>
+  <text x="350" y="278" text-anchor="middle" font-size="12" fill="#5b6b85">constraints enforced</text>
+
+  <!-- robot -->
+  <rect x="540" y="190" width="180" height="90" rx="12" fill="#1f2d4d"/>
+  <text x="630" y="228" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff">🤖 Robot</text>
+  <text x="630" y="250" text-anchor="middle" font-size="12" fill="#9fb3d1">base + dual arms</text>
+  <text x="630" y="268" text-anchor="middle" font-size="12" fill="#9fb3d1">+ state estimation</text>
+
+  <!-- arrows main path -->
+  <g stroke="#1f2d4d" stroke-width="2.5" marker-end="url(#ag)">
+    <line x1="190" y1="230" x2="248" y2="240"/>
+    <line x1="450" y1="250" x2="538" y2="235"/>
+  </g>
+  <!-- RL into QP -->
+  <line x1="350" y1="170" x2="350" y2="198" stroke="#8A63D2" stroke-width="2.5" marker-end="url(#ap)"/>
+  <text x="360" y="188" font-size="12" fill="#6b46b0">correction / reference</text>
+  <!-- task into RL -->
+  <path d="M150 190 Q200 100 248 110" fill="none" stroke="#FFB000" stroke-width="2.5" marker-end="url(#ag)"/>
+
+  <!-- feedback: robot -> RL (reward) -->
+  <path d="M630 190 L630 60 L350 60 L350 78" fill="none" stroke="#8A63D2" stroke-width="2.5" stroke-dasharray="6 4" marker-end="url(#ap)"/>
+  <text x="470" y="50" text-anchor="middle" font-size="12" fill="#6b46b0">reward / experience</text>
+
+  <!-- feedback: robot -> task/state -->
+  <path d="M630 280 L630 400 L115 400 L115 272" fill="none" stroke="#137a74" stroke-width="2.5" stroke-dasharray="6 4" marker-end="url(#ag)"/>
+  <text x="372" y="418" text-anchor="middle" font-size="12" fill="#137a74">state feedback (closed loop)</text>
+
+  <!-- callout box -->
+  <rect x="540" y="320" width="380" height="130" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+  <text x="560" y="350" font-size="14" font-weight="700" fill="#1f2d4d">Why this structure?</text>
+  <text x="560" y="376" font-size="13" fill="#5b6b85">• QP guarantees joint / base / collision limits</text>
+  <text x="560" y="400" font-size="13" fill="#5b6b85">• RL handles slip, contact, payload, decisions</text>
+  <text x="560" y="424" font-size="13" fill="#5b6b85">• safe even while the policy is still training</text>
+</svg>

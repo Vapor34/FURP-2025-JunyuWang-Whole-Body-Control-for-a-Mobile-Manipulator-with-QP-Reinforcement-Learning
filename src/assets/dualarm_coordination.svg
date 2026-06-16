@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 420" font-family="'Segoe UI',Arial,sans-serif">
+  <rect width="980" height="420" fill="#f7fafc" rx="14"/>
+  <text x="40" y="46" font-size="24" font-weight="700" fill="#1f2d4d">🤝 Dual-Arm Coordination Modes</text>
+  <text x="40" y="72" font-size="14" fill="#5b6b85">Increasing coupling: independent → rigid relative pose → whole-body</text>
+
+  <!-- panel template positions -->
+  <!-- Mode A -->
+  <g transform="translate(40,100)">
+    <rect width="280" height="280" rx="14" fill="#ffffff" stroke="#00B8D9" stroke-width="2.5"/>
+    <text x="140" y="34" text-anchor="middle" font-size="16" font-weight="700" fill="#00788f">🅰️ Independent</text>
+    <text x="140" y="56" text-anchor="middle" font-size="12" fill="#5b6b85">each arm tracks its own goal</text>
+    <!-- torso -->
+    <rect x="125" y="150" width="30" height="80" rx="6" fill="#33476e"/>
+    <circle cx="140" cy="152" r="8" fill="#8A63D2"/>
+    <!-- arms to separate targets -->
+    <g stroke="#36CFC9" stroke-width="7" fill="none" stroke-linecap="round">
+      <path d="M140 158 L80 120 L55 160"/>
+    </g>
+    <g stroke="#8A63D2" stroke-width="7" fill="none" stroke-linecap="round">
+      <path d="M140 158 L200 120 L225 160"/>
+    </g>
+    <circle cx="55" cy="160" r="9" fill="#00B8D9"/>
+    <circle cx="225" cy="160" r="9" fill="#8A63D2"/>
+    <!-- two separate target stars -->
+    <circle cx="48" cy="200" r="13" fill="none" stroke="#FFB000" stroke-width="2.5" stroke-dasharray="4 3"/>
+    <circle cx="232" cy="200" r="13" fill="none" stroke="#FFB000" stroke-width="2.5" stroke-dasharray="4 3"/>
+  </g>
+
+  <!-- Mode B -->
+  <g transform="translate(350,100)">
+    <rect width="280" height="280" rx="14" fill="#ffffff" stroke="#36CFC9" stroke-width="2.5"/>
+    <text x="140" y="34" text-anchor="middle" font-size="16" font-weight="700" fill="#1f8f88">🔗 Relative-Pose (rigid)</text>
+    <text x="140" y="56" text-anchor="middle" font-size="12" fill="#5b6b85">arms hold a fixed transform</text>
+    <rect x="125" y="150" width="30" height="80" rx="6" fill="#33476e"/>
+    <circle cx="140" cy="152" r="8" fill="#8A63D2"/>
+    <g stroke="#36CFC9" stroke-width="7" fill="none" stroke-linecap="round">
+      <path d="M140 158 L85 130 L70 175"/>
+    </g>
+    <g stroke="#8A63D2" stroke-width="7" fill="none" stroke-linecap="round">
+      <path d="M140 158 L195 130 L210 175"/>
+    </g>
+    <circle cx="70" cy="175" r="9" fill="#00B8D9"/>
+    <circle cx="210" cy="175" r="9" fill="#8A63D2"/>
+    <!-- shared object -->
+    <rect x="70" y="178" width="140" height="26" rx="6" fill="#FFB000" opacity="0.9"/>
+    <text x="140" y="196" text-anchor="middle" font-size="12" fill="#5a4500" font-weight="600">shared object</text>
+    <text x="140" y="240" text-anchor="middle" font-size="13" font-family="monospace" fill="#1f2d4d">ᴸT_ᴿ = const</text>
+  </g>
+
+  <!-- Mode C -->
+  <g transform="translate(660,100)">
+    <rect width="280" height="280" rx="14" fill="#ffffff" stroke="#8A63D2" stroke-width="2.5"/>
+    <text x="140" y="34" text-anchor="middle" font-size="16" font-weight="700" fill="#6b46b0">🌀 Whole-Body</text>
+    <text x="140" y="56" text-anchor="middle" font-size="12" fill="#5b6b85">base + both arms, one task</text>
+    <!-- chassis -->
+    <rect x="70" y="232" width="140" height="22" rx="8" fill="#33476e"/>
+    <ellipse cx="92" cy="262" rx="12" ry="8" fill="#1c2b4d" stroke="#00B8D9" stroke-width="2"/>
+    <ellipse cx="188" cy="262" rx="12" ry="8" fill="#1c2b4d" stroke="#00B8D9" stroke-width="2"/>
+    <!-- torso -->
+    <rect x="125" y="152" width="30" height="80" rx="6" fill="#33476e"/>
+    <circle cx="140" cy="154" r="8" fill="#8A63D2"/>
+    <g stroke="#36CFC9" stroke-width="7" fill="none" stroke-linecap="round">
+      <path d="M140 160 L88 132 L74 172"/>
+    </g>
+    <g stroke="#8A63D2" stroke-width="7" fill="none" stroke-linecap="round">
+      <path d="M140 160 L192 132 L206 172"/>
+    </g>
+    <circle cx="74" cy="172" r="9" fill="#00B8D9"/>
+    <circle cx="206" cy="172" r="9" fill="#8A63D2"/>
+    <rect x="74" y="175" width="132" height="24" rx="6" fill="#FFB000" opacity="0.9"/>
+    <!-- base motion arrow -->
+    <path d="M55 290 L120 290" stroke="#6b46b0" stroke-width="3" marker-end="url(#mc)"/>
+    <text x="150" y="294" font-size="12" fill="#6b46b0">base assists reach</text>
+  </g>
+
+  <defs>
+    <marker id="mc" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0 0 L7 3 L0 6 Z" fill="#6b46b0"/></marker>
+  </defs>
+</svg>

@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 360" font-family="'Segoe UI',Arial,sans-serif">
+  <defs>
+    <linearGradient id="rb" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f7fafc"/><stop offset="1" stop-color="#eef2f7"/>
+    </linearGradient>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto">
+      <path d="M0 0 L7 3 L0 6 Z" fill="#8A63D2"/>
+    </marker>
+  </defs>
+  <rect width="1100" height="360" fill="url(#rb)" rx="14"/>
+  <text x="40" y="50" font-size="26" font-weight="700" fill="#1f2d4d">🗺️ Research Roadmap</text>
+  <text x="40" y="78" font-size="15" fill="#5b6b85">From MoveIt onboarding to learning-augmented whole-body control</text>
+
+  <!-- phase boxes -->
+  <g font-size="15" font-weight="600">
+    <!-- 1 -->
+    <rect x="40" y="120" width="180" height="90" rx="12" fill="#ffffff" stroke="#00B8D9" stroke-width="2.5"/>
+    <text x="130" y="150" text-anchor="middle" fill="#00788f" font-size="13">PHASE 1</text>
+    <text x="130" y="175" text-anchor="middle" fill="#1f2d4d">🪜 MoveIt</text>
+    <text x="130" y="196" text-anchor="middle" fill="#1f2d4d">Onboarding</text>
+    <!-- 2 -->
+    <rect x="250" y="120" width="180" height="90" rx="12" fill="#ffffff" stroke="#1aa7b8" stroke-width="2.5"/>
+    <text x="340" y="150" text-anchor="middle" fill="#0f7886" font-size="13">PHASE 2</text>
+    <text x="340" y="175" text-anchor="middle" fill="#1f2d4d">🦾 Single-Arm</text>
+    <text x="340" y="196" text-anchor="middle" fill="#1f2d4d">Control</text>
+    <!-- 3 -->
+    <rect x="460" y="120" width="180" height="90" rx="12" fill="#ffffff" stroke="#36CFC9" stroke-width="2.5"/>
+    <text x="550" y="150" text-anchor="middle" fill="#1f8f88" font-size="13">PHASE 3</text>
+    <text x="550" y="175" text-anchor="middle" fill="#1f2d4d">🤝 Dual-Arm</text>
+    <text x="550" y="196" text-anchor="middle" fill="#1f2d4d">Coordination</text>
+    <!-- 4 -->
+    <rect x="670" y="120" width="180" height="90" rx="12" fill="#ffffff" stroke="#6f78c9" stroke-width="2.5"/>
+    <text x="760" y="150" text-anchor="middle" fill="#4a52a0" font-size="13">PHASE 4</text>
+    <text x="760" y="175" text-anchor="middle" fill="#1f2d4d">⚙️ Whole-Body</text>
+    <text x="760" y="196" text-anchor="middle" fill="#1f2d4d">QP Control</text>
+    <!-- 5 -->
+    <rect x="880" y="120" width="180" height="90" rx="12" fill="#ffffff" stroke="#8A63D2" stroke-width="2.5"/>
+    <text x="970" y="150" text-anchor="middle" fill="#6b46b0" font-size="13">PHASE 5</text>
+    <text x="970" y="175" text-anchor="middle" fill="#1f2d4d">🧠 RL</text>
+    <text x="970" y="196" text-anchor="middle" fill="#1f2d4d">Augmentation</text>
+  </g>
+
+  <!-- arrows -->
+  <g stroke="#8A63D2" stroke-width="2.5" marker-end="url(#arr)">
+    <line x1="222" y1="165" x2="246" y2="165"/>
+    <line x1="432" y1="165" x2="456" y2="165"/>
+    <line x1="642" y1="165" x2="666" y2="165"/>
+    <line x1="852" y1="165" x2="876" y2="165"/>
+  </g>
+
+  <!-- footer notes -->
+  <g font-size="13" fill="#5b6b85">
+    <text x="130" y="250" text-anchor="middle">model + planning</text>
+    <text x="340" y="250" text-anchor="middle">one arm, sim→real</text>
+    <text x="550" y="250" text-anchor="middle">shared / relative grasp</text>
+    <text x="760" y="250" text-anchor="middle">base + arms together</text>
+    <text x="970" y="250" text-anchor="middle">policy on top of QP</text>
+  </g>
+
+  <rect x="40" y="290" width="1020" height="44" rx="10" fill="#1f2d4d"/>
+  <text x="550" y="318" text-anchor="middle" fill="#cfe0f5" font-size="14">reproduce fluency → control one arm → coordinate two → optimize the whole body → learn the rest</text>
+</svg>
