@@ -1,0 +1,56 @@
+import os
+import time
+import threading
+import numpy as np
+
+import mujoco
+import mujoco.viewer
+
+import rclpy
+from rclpy.node import Node
+from sensor_msgs.msg import JointState
+
+class MujocoRosBridge(Node):
+    def __init__(self, model, data):
+        super().__init__('mujoco_ur5e_bridge')
+        self.model = model
+        self.data = data
+        
+        #As a publisher, publish joint states as topic '/joint_states'
+        self.joint_pub = self.create_publisher(JointState, '/joint_states', 10)
+        
+        self.joint_names = [mujoco.mj_id2name(self.model, mujoco.mjtObj.mjOBJ_JOINT, i) 
+                            for i in range(self.model.njnt)]
+        
+        # publish states
+        self.timer = self.create_timer(0.5, self.publish_states)
+
+    def publish_states(self):
+        msg = JointState()
+        msg.header.stamp = self.get_clock().now().to_msg()
+        msg.name = self.joint_names
+        
+        msg.position = self.data.qpos.tolist()
+        msg.velocity = self.data.qvel.tolist()
+        self.joint_pub.publish(msg)
+
+def ros_spin_thread(node):
+    rclpy.spin(node)
+
+if __name__ == "__main__":
+    rclpy.init()
+
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    model_path = os.path.join(current_dir, "assets", "ur5e.xml")
+    model = mujoco.MjModel.from_xml_path(model_path)
+    data = mujoco.MjData(model)
+
+    # 3. 启动 ROS 桥接节点（放在后台线程，防止阻塞 MuJoCo 的可视化窗口）
+    ros_node = MujocoRosBridge(model, data)
+    ros_thread = threading.Thread(target=ros_spin_thread, args=(ros_node,), daemon=True)
+    ros_thread.start()
+
+    print("MuJoCo simulation and ROS 2 Bridge started.")
+    mujoco.viewer.launch(model, data)
+
+    rclpy.shutdown()
