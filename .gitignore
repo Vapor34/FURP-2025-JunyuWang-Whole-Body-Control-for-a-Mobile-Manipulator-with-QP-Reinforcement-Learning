@@ -34,3 +34,10 @@ data/
 .env
 *.key
 secrets.*
+
+# Agent
+.agent/
+.codex
+
+.github
+.vscode
