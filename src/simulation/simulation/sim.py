@@ -2,6 +2,7 @@ import os
 import time
 import threading
 import numpy as np
+from pathlib import Path
 
 import mujoco
 import mujoco.viewer
@@ -37,12 +38,15 @@ class MujocoRosBridge(Node):
 def ros_spin_thread(node):
     rclpy.spin(node)
 
-if __name__ == "__main__":
+def get_model_path():
+    src_dir = Path(__file__).resolve().parents[2]
+    return src_dir / "description" / "assets" / "mujoco" / "ur5e.xml"
+
+def main():
     rclpy.init()
 
-    current_dir = os.path.dirname(os.path.abspath(__file__))
-    model_path = os.path.join(current_dir, "assets", "ur5e.xml")
-    model = mujoco.MjModel.from_xml_path(model_path)
+    model_path = get_model_path()
+    model = mujoco.MjModel.from_xml_path(str(model_path))
     data = mujoco.MjData(model)
 
     # 3. 启动 ROS 桥接节点（放在后台线程，防止阻塞 MuJoCo 的可视化窗口）
@@ -54,3 +58,6 @@ if __name__ == "__main__":
     mujoco.viewer.launch(model, data)
 
     rclpy.shutdown()
+
+if __name__ == "__main__":
+    main()
