@@ -1,0 +1,26 @@
+[1.284s] Invoking command in '/home/joe/Desktop/FURP/build/simulation': AMENT_PREFIX_PATH=/home/joe/Desktop/FURP/install/description:${AMENT_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/joe/Desktop/FURP/build/simulation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/joe/Desktop/FURP/install/simulation/lib/python3.12/site-packages:/home/joe/Desktop/FURP/build/description:/home/joe/Desktop/FURP/install/description/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/joe/Desktop/FURP/build/simulation/build --no-deps symlink_data
+[1.680s] running develop
+[1.890s] running egg_info
+[1.891s] creating simulation.egg-info
+[1.911s] writing simulation.egg-info/PKG-INFO
+[1.911s] writing dependency_links to simulation.egg-info/dependency_links.txt
+[1.911s] writing entry points to simulation.egg-info/entry_points.txt
+[1.911s] writing requirements to simulation.egg-info/requires.txt
+[1.912s] writing top-level names to simulation.egg-info/top_level.txt
+[1.912s] writing manifest file 'simulation.egg-info/SOURCES.txt'
+[1.953s] reading manifest file 'simulation.egg-info/SOURCES.txt'
+[1.953s] writing manifest file 'simulation.egg-info/SOURCES.txt'
+[1.976s] running build_ext
+[1.976s] Creating /home/joe/Desktop/FURP/install/simulation/lib/python3.12/site-packages/simulation.egg-link (link to .)
+[1.977s] Installing sim script to /home/joe/Desktop/FURP/install/simulation/lib/simulation
+[1.977s] 
+[1.978s] Installed /home/joe/Desktop/FURP/build/simulation
+[1.978s] running symlink_data
+[1.978s] creating /home/joe/Desktop/FURP/install/simulation/share/ament_index
+[1.978s] creating /home/joe/Desktop/FURP/install/simulation/share/ament_index/resource_index
+[1.978s] creating /home/joe/Desktop/FURP/install/simulation/share/ament_index/resource_index/packages
+[1.978s] symbolically linking /home/joe/Desktop/FURP/build/simulation/resource/simulation/simulation -> /home/joe/Desktop/FURP/install/simulation/share/ament_index/resource_index/packages
+[1.978s] symbolically linking /home/joe/Desktop/FURP/build/simulation/package.xml -> /home/joe/Desktop/FURP/install/simulation/share/simulation
+[1.979s] creating /home/joe/Desktop/FURP/install/simulation/share/simulation/launch
+[1.979s] symbolically linking /home/joe/Desktop/FURP/build/simulation/launch/my_launch.launch.py -> /home/joe/Desktop/FURP/install/simulation/share/simulation/launch
+[2.026s] Invoked command in '/home/joe/Desktop/FURP/build/simulation' returned '0': AMENT_PREFIX_PATH=/home/joe/Desktop/FURP/install/description:${AMENT_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/joe/Desktop/FURP/build/simulation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/joe/Desktop/FURP/install/simulation/lib/python3.12/site-packages:/home/joe/Desktop/FURP/build/description:/home/joe/Desktop/FURP/install/description/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/joe/Desktop/FURP/build/simulation/build --no-deps symlink_data

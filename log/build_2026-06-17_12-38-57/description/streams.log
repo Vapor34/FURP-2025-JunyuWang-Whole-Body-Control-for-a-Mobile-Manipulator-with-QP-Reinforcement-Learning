@@ -1,0 +1,31 @@
+[1.413s] Invoking command in '/home/joe/Desktop/FURP/src/description': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/joe/Desktop/FURP/build/description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/joe/Desktop/FURP/install/description/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/description build --build-base /home/joe/Desktop/FURP/build/description/build install --record /home/joe/Desktop/FURP/build/description/install.log --single-version-externally-managed install_data
+[1.759s] running egg_info
+[1.760s] creating ../../build/description/description.egg-info
+[1.781s] writing ../../build/description/description.egg-info/PKG-INFO
+[1.781s] writing dependency_links to ../../build/description/description.egg-info/dependency_links.txt
+[1.782s] writing entry points to ../../build/description/description.egg-info/entry_points.txt
+[1.782s] writing requirements to ../../build/description/description.egg-info/requires.txt
+[1.783s] writing top-level names to ../../build/description/description.egg-info/top_level.txt
+[1.783s] writing manifest file '../../build/description/description.egg-info/SOURCES.txt'
+[1.826s] reading manifest file '../../build/description/description.egg-info/SOURCES.txt'
+[1.826s] writing manifest file '../../build/description/description.egg-info/SOURCES.txt'
+[1.827s] running build
+[1.828s] running build_py
+[1.828s] creating /home/joe/Desktop/FURP/build/description/build
+[1.828s] creating /home/joe/Desktop/FURP/build/description/build/lib
+[1.828s] creating /home/joe/Desktop/FURP/build/description/build/lib/description
+[1.828s] copying description/plan.py -> /home/joe/Desktop/FURP/build/description/build/lib/description
+[1.829s] copying description/__init__.py -> /home/joe/Desktop/FURP/build/description/build/lib/description
+[1.829s] running install
+[1.834s] running install_lib
+[1.856s] creating /home/joe/Desktop/FURP/install/description/lib/python3.12/site-packages/description
+[1.856s] copying /home/joe/Desktop/FURP/build/description/build/lib/description/plan.py -> /home/joe/Desktop/FURP/install/description/lib/python3.12/site-packages/description
+[1.857s] copying /home/joe/Desktop/FURP/build/description/build/lib/description/__init__.py -> /home/joe/Desktop/FURP/install/description/lib/python3.12/site-packages/description
+[1.858s] byte-compiling /home/joe/Desktop/FURP/install/description/lib/python3.12/site-packages/description/plan.py to plan.cpython-312.pyc
+[1.858s] byte-compiling /home/joe/Desktop/FURP/install/description/lib/python3.12/site-packages/description/__init__.py to __init__.cpython-312.pyc
+[1.858s] running install_data
+[1.858s] error: can't copy 'resource/description': doesn't exist or not a regular file
+[1.858s] creating /home/joe/Desktop/FURP/install/description/share/ament_index
+[1.859s] creating /home/joe/Desktop/FURP/install/description/share/ament_index/resource_index
+[1.859s] creating /home/joe/Desktop/FURP/install/description/share/ament_index/resource_index/packages
+[1.879s] Invoked command in '/home/joe/Desktop/FURP/src/description' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/joe/Desktop/FURP/build/description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/joe/Desktop/FURP/install/description/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/description build --build-base /home/joe/Desktop/FURP/build/description/build install --record /home/joe/Desktop/FURP/build/description/install.log --single-version-externally-managed install_data

@@ -1,0 +1,290 @@
+[0.131s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.131s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=14, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x754064dc36e0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x754064ee3a40>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x754064ee3a40>>, mixin_verb=('build',))
+[0.175s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.175s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.175s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.175s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.175s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.176s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.176s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/joe/Desktop/FURP'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['ignore', 'ignore_ament_install']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'ignore'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'ignore_ament_install'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['colcon_pkg']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'colcon_pkg'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['colcon_meta']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'colcon_meta'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['ros']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'ros'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['cmake', 'python']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'cmake'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'python'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['python_setup_py']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'python_setup_py'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(docs/meeting_notes) by extensions ['ignore', 'ignore_ament_install']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(docs/meeting_notes) by extension 'ignore'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(docs/meeting_notes) by extension 'ignore_ament_install'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(docs/meeting_notes) by extensions ['colcon_pkg']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(docs/meeting_notes) by extension 'colcon_pkg'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(docs/meeting_notes) by extensions ['colcon_meta']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(docs/meeting_notes) by extension 'colcon_meta'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(docs/meeting_notes) by extensions ['ros']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(docs/meeting_notes) by extension 'ros'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(docs/meeting_notes) by extensions ['cmake', 'python']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(docs/meeting_notes) by extension 'cmake'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(docs/meeting_notes) by extension 'python'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(docs/meeting_notes) by extensions ['python_setup_py']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(docs/meeting_notes) by extension 'python_setup_py'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/control) by extensions ['ignore', 'ignore_ament_install']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/control) by extension 'ignore'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/control) by extension 'ignore_ament_install'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/control) by extensions ['colcon_pkg']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/control) by extension 'colcon_pkg'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/control) by extensions ['colcon_meta']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/control) by extension 'colcon_meta'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/control) by extensions ['ros']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/control) by extension 'ros'
+[0.211s] DEBUG:colcon.colcon_core.package_identification:Package 'src/control' with type 'ros.ament_python' and name 'control'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/description) by extensions ['ignore', 'ignore_ament_install']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/description) by extension 'ignore'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/description) by extension 'ignore_ament_install'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/description) by extensions ['colcon_pkg']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/description) by extension 'colcon_pkg'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/description) by extensions ['colcon_meta']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/description) by extension 'colcon_meta'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/description) by extensions ['ros']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/description) by extension 'ros'
+[0.212s] DEBUG:colcon.colcon_core.package_identification:Package 'src/description' with type 'ros.ament_python' and name 'description'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation) by extensions ['ignore', 'ignore_ament_install']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation) by extension 'ignore'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation) by extension 'ignore_ament_install'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation) by extensions ['colcon_pkg']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation) by extension 'colcon_pkg'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation) by extensions ['colcon_meta']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation) by extension 'colcon_meta'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation) by extensions ['ros']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation) by extension 'ros'
+[0.212s] DEBUG:colcon.colcon_core.package_identification:Package 'src/simulation' with type 'ros.ament_python' and name 'simulation'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5e_moveit_config) by extensions ['ignore', 'ignore_ament_install']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5e_moveit_config) by extension 'ignore'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5e_moveit_config) by extension 'ignore_ament_install'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5e_moveit_config) by extensions ['colcon_pkg']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5e_moveit_config) by extension 'colcon_pkg'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5e_moveit_config) by extensions ['colcon_meta']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5e_moveit_config) by extension 'colcon_meta'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5e_moveit_config) by extensions ['ros']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5e_moveit_config) by extension 'ros'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5e_moveit_config) by extensions ['cmake', 'python']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5e_moveit_config) by extension 'cmake'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5e_moveit_config) by extension 'python'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5e_moveit_config) by extensions ['python_setup_py']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5e_moveit_config) by extension 'python_setup_py'
+[0.213s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.213s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.213s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.213s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.213s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.232s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.232s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.237s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 70 installed packages in /home/joe/ws_moveit/install
+[0.239s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 439 installed packages in /opt/ros/jazzy
+[0.240s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.302s] WARNING:colcon.colcon_core.package_selection:Some selected packages are already built in one or more underlay workspaces:
+	'simulation' is in: /opt/ros/jazzy
+If a package in a merged underlay workspace is overridden and it installs headers, then all packages in the overlay must sort their include directories by workspace order. Failure to do so may result in build failures or undefined behavior at run time.
+If the overridden package is used by another package in any underlay, then the overriding package in the overlay must be API and ABI compatible or undefined behavior at run time may occur.
+
+If you understand the risks and want to override a package anyways, add the following to the command line:
+	--allow-overriding simulation
+
+This may be promoted to an error in a future release of colcon-override-check.
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'description' build argument 'cmake_args' from command line to 'None'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'description' build argument 'cmake_target' from command line to 'None'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'description' build argument 'cmake_clean_first' from command line to 'False'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'description' build argument 'cmake_force_configure' from command line to 'False'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'description' build argument 'ament_cmake_args' from command line to 'None'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.304s] DEBUG:colcon.colcon_core.verb:Building package 'description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/joe/Desktop/FURP/build/description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/joe/Desktop/FURP/install/description', 'merge_install': False, 'path': '/home/joe/Desktop/FURP/src/description', 'symlink_install': True, 'test_result_base': None}
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'cmake_args' from command line to 'None'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'cmake_target' from command line to 'None'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'cmake_clean_first' from command line to 'False'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'cmake_force_configure' from command line to 'False'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'ament_cmake_args' from command line to 'None'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.305s] DEBUG:colcon.colcon_core.verb:Building package 'control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/joe/Desktop/FURP/build/control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/joe/Desktop/FURP/install/control', 'merge_install': False, 'path': '/home/joe/Desktop/FURP/src/control', 'symlink_install': True, 'test_result_base': None}
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'simulation' build argument 'cmake_args' from command line to 'None'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'simulation' build argument 'cmake_target' from command line to 'None'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'simulation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'simulation' build argument 'cmake_clean_cache' from command line to 'False'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'simulation' build argument 'cmake_clean_first' from command line to 'False'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'simulation' build argument 'cmake_force_configure' from command line to 'False'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'simulation' build argument 'ament_cmake_args' from command line to 'None'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'simulation' build argument 'catkin_cmake_args' from command line to 'None'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'simulation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.305s] DEBUG:colcon.colcon_core.verb:Building package 'simulation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/joe/Desktop/FURP/build/simulation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/joe/Desktop/FURP/install/simulation', 'merge_install': False, 'path': '/home/joe/Desktop/FURP/src/simulation', 'symlink_install': True, 'test_result_base': None}
+[0.305s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.306s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.307s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/joe/Desktop/FURP/src/description' with build type 'ament_python'
+[0.307s] Level 1:colcon.colcon_core.shell:create_environment_hook('description', 'ament_prefix_path')
+[0.311s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.312s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/joe/Desktop/FURP/install/description/share/description/hook/ament_prefix_path.ps1'
+[0.313s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/joe/Desktop/FURP/install/description/share/description/hook/ament_prefix_path.dsv'
+[0.314s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/joe/Desktop/FURP/install/description/share/description/hook/ament_prefix_path.sh'
+[0.315s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.315s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.627s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/joe/Desktop/FURP/src/description'
+[0.627s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.627s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.300s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/joe/Desktop/FURP/build/description': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/joe/Desktop/FURP/build/description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/joe/Desktop/FURP/install/description/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/joe/Desktop/FURP/build/description/build --no-deps symlink_data
+[2.108s] Level 1:colcon.colcon_core.shell:create_environment_hook('description', 'pythonpath_develop')
+[2.108s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/joe/Desktop/FURP/build/description/share/description/hook/pythonpath_develop.ps1'
+[2.110s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/joe/Desktop/FURP/build/description' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/joe/Desktop/FURP/build/description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/joe/Desktop/FURP/install/description/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/joe/Desktop/FURP/build/description/build --no-deps symlink_data
+[2.111s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/joe/Desktop/FURP/build/description/share/description/hook/pythonpath_develop.dsv'
+[2.111s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/joe/Desktop/FURP/build/description/share/description/hook/pythonpath_develop.sh'
+[2.116s] Level 1:colcon.colcon_core.environment:checking '/home/joe/Desktop/FURP/install/description' for CMake module files
+[2.116s] Level 1:colcon.colcon_core.environment:checking '/home/joe/Desktop/FURP/install/description' for CMake config files
+[2.117s] Level 1:colcon.colcon_core.environment:checking '/home/joe/Desktop/FURP/install/description/lib'
+[2.117s] Level 1:colcon.colcon_core.environment:checking '/home/joe/Desktop/FURP/install/description/bin'
+[2.118s] Level 1:colcon.colcon_core.environment:checking '/home/joe/Desktop/FURP/install/description/lib/pkgconfig/description.pc'
+[2.118s] Level 1:colcon.colcon_core.environment:checking '/home/joe/Desktop/FURP/install/description/lib/python3.12/site-packages'
+[2.118s] Level 1:colcon.colcon_core.shell:create_environment_hook('description', 'pythonpath')
+[2.118s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/joe/Desktop/FURP/install/description/share/description/hook/pythonpath.ps1'
+[2.119s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/joe/Desktop/FURP/install/description/share/description/hook/pythonpath.dsv'
+[2.119s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/joe/Desktop/FURP/install/description/share/description/hook/pythonpath.sh'
+[2.120s] Level 1:colcon.colcon_core.environment:checking '/home/joe/Desktop/FURP/install/description/bin'
+[2.120s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(description)
+[2.121s] INFO:colcon.colcon_core.shell:Creating package script '/home/joe/Desktop/FURP/install/description/share/description/package.ps1'
+[2.122s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/joe/Desktop/FURP/install/description/share/description/package.dsv'
+[2.123s] INFO:colcon.colcon_core.shell:Creating package script '/home/joe/Desktop/FURP/install/description/share/description/package.sh'
+[2.123s] INFO:colcon.colcon_core.shell:Creating package script '/home/joe/Desktop/FURP/install/description/share/description/package.bash'
+[2.124s] INFO:colcon.colcon_core.shell:Creating package script '/home/joe/Desktop/FURP/install/description/share/description/package.zsh'
+[2.125s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/joe/Desktop/FURP/install/description/share/colcon-core/packages/description)
+[2.125s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/joe/Desktop/FURP/src/control' with build type 'ament_python'
+[2.126s] Level 1:colcon.colcon_core.shell:create_environment_hook('control', 'ament_prefix_path')
+[2.126s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/joe/Desktop/FURP/install/control/share/control/hook/ament_prefix_path.ps1'
+[2.127s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/joe/Desktop/FURP/install/control/share/control/hook/ament_prefix_path.dsv'
+[2.128s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/joe/Desktop/FURP/install/control/share/control/hook/ament_prefix_path.sh'
+[2.129s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.129s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.138s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/joe/Desktop/FURP/src/simulation' with build type 'ament_python'
+[2.138s] Level 1:colcon.colcon_core.shell:create_environment_hook('simulation', 'ament_prefix_path')
+[2.139s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/joe/Desktop/FURP/install/simulation/share/simulation/hook/ament_prefix_path.ps1'
+[2.139s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/joe/Desktop/FURP/install/simulation/share/simulation/hook/ament_prefix_path.dsv'
+[2.140s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/joe/Desktop/FURP/install/simulation/share/simulation/hook/ament_prefix_path.sh'
+[2.140s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.140s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.438s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/joe/Desktop/FURP/src/control'
+[2.438s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.438s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.730s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/joe/Desktop/FURP/src/simulation'
+[2.731s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.731s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.467s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/joe/Desktop/FURP/build/control': AMENT_PREFIX_PATH=/home/joe/Desktop/FURP/install/description:${AMENT_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/joe/Desktop/FURP/build/control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/joe/Desktop/FURP/install/control/lib/python3.12/site-packages:/home/joe/Desktop/FURP/build/description:/home/joe/Desktop/FURP/install/description/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/joe/Desktop/FURP/build/control/build --no-deps symlink_data
+[3.474s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/joe/Desktop/FURP/build/simulation': AMENT_PREFIX_PATH=/home/joe/Desktop/FURP/install/description:${AMENT_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/joe/Desktop/FURP/build/simulation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/joe/Desktop/FURP/install/simulation/lib/python3.12/site-packages:/home/joe/Desktop/FURP/build/description:/home/joe/Desktop/FURP/install/description/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/joe/Desktop/FURP/build/simulation/build --no-deps symlink_data
+[4.295s] Level 1:colcon.colcon_core.shell:create_environment_hook('control', 'pythonpath_develop')
+[4.296s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/joe/Desktop/FURP/build/control/share/control/hook/pythonpath_develop.ps1'
+[4.297s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/joe/Desktop/FURP/build/control' returned '0': AMENT_PREFIX_PATH=/home/joe/Desktop/FURP/install/description:${AMENT_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/joe/Desktop/FURP/build/control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/joe/Desktop/FURP/install/control/lib/python3.12/site-packages:/home/joe/Desktop/FURP/build/description:/home/joe/Desktop/FURP/install/description/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/joe/Desktop/FURP/build/control/build --no-deps symlink_data
+[4.297s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/joe/Desktop/FURP/build/control/share/control/hook/pythonpath_develop.dsv'
+[4.298s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/joe/Desktop/FURP/build/control/share/control/hook/pythonpath_develop.sh'
+[4.299s] Level 1:colcon.colcon_core.environment:checking '/home/joe/Desktop/FURP/install/control' for CMake module files
+[4.300s] Level 1:colcon.colcon_core.environment:checking '/home/joe/Desktop/FURP/install/control' for CMake config files
+[4.301s] Level 1:colcon.colcon_core.environment:checking '/home/joe/Desktop/FURP/install/control/lib'
+[4.301s] Level 1:colcon.colcon_core.environment:checking '/home/joe/Desktop/FURP/install/control/bin'
+[4.301s] Level 1:colcon.colcon_core.environment:checking '/home/joe/Desktop/FURP/install/control/lib/pkgconfig/control.pc'
+[4.302s] Level 1:colcon.colcon_core.environment:checking '/home/joe/Desktop/FURP/install/control/lib/python3.12/site-packages'
+[4.302s] Level 1:colcon.colcon_core.shell:create_environment_hook('control', 'pythonpath')
+[4.302s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/joe/Desktop/FURP/install/control/share/control/hook/pythonpath.ps1'
+[4.303s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/joe/Desktop/FURP/install/control/share/control/hook/pythonpath.dsv'
+[4.304s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/joe/Desktop/FURP/install/control/share/control/hook/pythonpath.sh'
+[4.305s] Level 1:colcon.colcon_core.environment:checking '/home/joe/Desktop/FURP/install/control/bin'
+[4.305s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(control)
+[4.306s] INFO:colcon.colcon_core.shell:Creating package script '/home/joe/Desktop/FURP/install/control/share/control/package.ps1'
+[4.307s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/joe/Desktop/FURP/install/control/share/control/package.dsv'
+[4.308s] INFO:colcon.colcon_core.shell:Creating package script '/home/joe/Desktop/FURP/install/control/share/control/package.sh'
+[4.308s] INFO:colcon.colcon_core.shell:Creating package script '/home/joe/Desktop/FURP/install/control/share/control/package.bash'
+[4.309s] INFO:colcon.colcon_core.shell:Creating package script '/home/joe/Desktop/FURP/install/control/share/control/package.zsh'
+[4.309s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/joe/Desktop/FURP/install/control/share/colcon-core/packages/control)
+[4.312s] Level 1:colcon.colcon_core.shell:create_environment_hook('simulation', 'pythonpath_develop')
+[4.313s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/joe/Desktop/FURP/build/simulation/share/simulation/hook/pythonpath_develop.ps1'
+[4.314s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/joe/Desktop/FURP/build/simulation' returned '0': AMENT_PREFIX_PATH=/home/joe/Desktop/FURP/install/description:${AMENT_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/joe/Desktop/FURP/build/simulation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/joe/Desktop/FURP/install/simulation/lib/python3.12/site-packages:/home/joe/Desktop/FURP/build/description:/home/joe/Desktop/FURP/install/description/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/joe/Desktop/FURP/build/simulation/build --no-deps symlink_data
+[4.314s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/joe/Desktop/FURP/build/simulation/share/simulation/hook/pythonpath_develop.dsv'
+[4.315s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/joe/Desktop/FURP/build/simulation/share/simulation/hook/pythonpath_develop.sh'
+[4.316s] Level 1:colcon.colcon_core.environment:checking '/home/joe/Desktop/FURP/install/simulation' for CMake module files
+[4.316s] Level 1:colcon.colcon_core.environment:checking '/home/joe/Desktop/FURP/install/simulation' for CMake config files
+[4.317s] Level 1:colcon.colcon_core.environment:checking '/home/joe/Desktop/FURP/install/simulation/lib'
+[4.317s] Level 1:colcon.colcon_core.environment:checking '/home/joe/Desktop/FURP/install/simulation/bin'
+[4.317s] Level 1:colcon.colcon_core.environment:checking '/home/joe/Desktop/FURP/install/simulation/lib/pkgconfig/simulation.pc'
+[4.317s] Level 1:colcon.colcon_core.environment:checking '/home/joe/Desktop/FURP/install/simulation/lib/python3.12/site-packages'
+[4.317s] Level 1:colcon.colcon_core.shell:create_environment_hook('simulation', 'pythonpath')
+[4.318s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/joe/Desktop/FURP/install/simulation/share/simulation/hook/pythonpath.ps1'
+[4.318s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/joe/Desktop/FURP/install/simulation/share/simulation/hook/pythonpath.dsv'
+[4.318s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/joe/Desktop/FURP/install/simulation/share/simulation/hook/pythonpath.sh'
+[4.319s] Level 1:colcon.colcon_core.environment:checking '/home/joe/Desktop/FURP/install/simulation/bin'
+[4.319s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(simulation)
+[4.320s] INFO:colcon.colcon_core.shell:Creating package script '/home/joe/Desktop/FURP/install/simulation/share/simulation/package.ps1'
+[4.320s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/joe/Desktop/FURP/install/simulation/share/simulation/package.dsv'
+[4.321s] INFO:colcon.colcon_core.shell:Creating package script '/home/joe/Desktop/FURP/install/simulation/share/simulation/package.sh'
+[4.321s] INFO:colcon.colcon_core.shell:Creating package script '/home/joe/Desktop/FURP/install/simulation/share/simulation/package.bash'
+[4.322s] INFO:colcon.colcon_core.shell:Creating package script '/home/joe/Desktop/FURP/install/simulation/share/simulation/package.zsh'
+[4.322s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/joe/Desktop/FURP/install/simulation/share/colcon-core/packages/simulation)
+[4.323s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[4.323s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[4.323s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[4.323s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[4.339s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[4.339s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[4.339s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[4.373s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[4.374s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/joe/Desktop/FURP/install/local_setup.ps1'
+[4.375s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/joe/Desktop/FURP/install/_local_setup_util_ps1.py'
+[4.377s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/joe/Desktop/FURP/install/setup.ps1'
+[4.381s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/joe/Desktop/FURP/install/local_setup.sh'
+[4.381s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/joe/Desktop/FURP/install/_local_setup_util_sh.py'
+[4.382s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/joe/Desktop/FURP/install/setup.sh'
+[4.385s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/joe/Desktop/FURP/install/local_setup.bash'
+[4.385s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/joe/Desktop/FURP/install/setup.bash'
+[4.388s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/joe/Desktop/FURP/install/local_setup.zsh'
+[4.389s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/joe/Desktop/FURP/install/setup.zsh'
