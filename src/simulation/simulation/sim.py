@@ -18,12 +18,13 @@ class MujocoRosBridge(Node):
         self.data = data
         
         #As a publisher, publish joint states as topic '/joint_states'
+        #message type:"sensor_msgs/JointState", topic name: "/joint_states", queue size: 10
         self.joint_pub = self.create_publisher(JointState, '/joint_states', 10)
         
         self.joint_names = [mujoco.mj_id2name(self.model, mujoco.mjtObj.mjOBJ_JOINT, i) 
-                            for i in range(self.model.njnt)]
+                            for i in range(self.model.njnt) if "joint" in mujoco.mj_id2name(self.model, mujoco.mjtObj.mjOBJ_JOINT, i)]
         
-        # publish states
+        # create a timer to publish joint states at 2Hz (every 0.5 seconds)
         self.timer = self.create_timer(0.5, self.publish_states)
 
     def publish_states(self):
@@ -33,6 +34,8 @@ class MujocoRosBridge(Node):
         
         msg.position = self.data.qpos.tolist()
         msg.velocity = self.data.qvel.tolist()
+
+        #publish message to topic '/joint_states'
         self.joint_pub.publish(msg)
 
 def ros_spin_thread(node):
