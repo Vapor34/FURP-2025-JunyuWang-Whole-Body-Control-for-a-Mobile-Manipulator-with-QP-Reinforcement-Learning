@@ -1,7 +1,4 @@
-import os
-import time
 import threading
-import numpy as np
 from pathlib import Path
 
 import mujoco
@@ -26,13 +23,12 @@ class MujocoRosBridge(Node):
         self.model = model
         self.data = data
 
-        self.joint_names = ARM_JOINT_NAMES
+        self.joint_names = list(ARM_JOINT_NAMES)
         self.joint_qpos_addr = []
         self.joint_qvel_addr = []
         
-        #As a publisher, publish joint states as topic '/cur_joint_states'
-        #message type:"sensor_msgs/JointState", topic name: "/cur_joint_states", queue size: 10
-        self.joint_pub = self.create_publisher(JointState, '/cur_joint_states', 10)
+        # Publish the current simulated joint states for robot_state_publisher and MoveIt.
+        self.joint_pub = self.create_publisher(JointState, '/joint_states', 10)
         
         
         for joint_name in self.joint_names:
@@ -45,21 +41,19 @@ class MujocoRosBridge(Node):
             if joint_id < 0:
                 raise RuntimeError(f"Joint not found in MuJoCo model: {joint_name}")
 
-            self.joint_qpos_addr.append(self.data.qpos[joint_id])
-            self.joint_qvel_addr.append(self.data.qvel[joint_id])
+            self.joint_qpos_addr.append(self.model.jnt_qposadr[joint_id])
+            self.joint_qvel_addr.append(self.model.jnt_dofadr[joint_id])
 
         self.joint_sub = self.create_subscription(JointState, '/next_joint_states', self.receive_states, 10)
+        self.timer = self.create_timer(0.02, self.publish_states)
 
     def receive_states(self, msg):
         # Update the joint positions and velocities in the MuJoCo simulation based on the received message
         for name, pos, vel in zip(msg.name, msg.position, msg.velocity):
             if name in self.joint_names:
-                joint_id = self.joint_names.index(name)
-                self.data.qpos[joint_id] = pos
-                self.data.qvel[joint_id] = vel
-
-        # create a timer to publish joint states every 0.02 seconds (50 Hz)
-        self.timer = self.create_timer(0.02, self.publish_states)
+                joint_index = self.joint_names.index(name)
+                self.data.qpos[self.joint_qpos_addr[joint_index]] = pos
+                self.data.qvel[self.joint_qvel_addr[joint_index]] = vel
 
     def publish_states(self):
         msg = JointState()
@@ -76,9 +70,7 @@ class MujocoRosBridge(Node):
             for qvel_addr in self.joint_qvel_addr
         ]
 
-        #publish message to topic '/joint_states'
         self.joint_pub.publish(msg)
-        self.get_logger().info(f"Joint name: {msg.name}, position: {msg.position}, velocity: {msg.velocity}")
 
 def ros_spin_thread(node):
     rclpy.spin(node)
