@@ -3,7 +3,13 @@ from rclpy.node import Node
 from rclpy.duration import Duration
 
 from pymoveit2 import MoveIt2
-from description.description.objname import ARM_JOINT_NAMES
+from description.description.robot_constants import ARM_JOINT_NAMES
+
+
+def MoveIt2PlannerNode():
+    def __init__(self):
+        super().__init__("moveit2_planner_node")
+        
 
 
 def main():
