@@ -4,6 +4,15 @@ from glob import glob
 
 package_name = 'description'
 
+def package_files(directory):
+    data_files = []
+    for path, _, filenames in os.walk(directory):
+        files = [os.path.join(path, filename) for filename in filenames]
+        if files:
+            install_path = os.path.join('share', package_name, path)
+            data_files.append((install_path, files))
+    return data_files
+
 setup(
     name=package_name,
     version='1.0.0',
@@ -13,7 +22,7 @@ setup(
         ('share/' + package_name, ['package.xml']),
         # 【关键】这一行确保 launch 文件夹中的文件能被系统找到
         (os.path.join('share', package_name, 'launch'), glob('launch/*.launch.py')),
-    ],
+    ] + package_files('assets'),
     install_requires=['setuptools'],
     zip_safe=True,
     maintainer='Junyu Wang',

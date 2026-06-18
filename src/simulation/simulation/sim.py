@@ -7,15 +7,17 @@ import mujoco.viewer
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import JointState
+from trajectory_msgs.msg import JointTrajectory
+from description.description.objname import ARM_JOINT_NAMES
 
-ARM_JOINT_NAMES = [
-    "shoulder_pan_joint",
-    "shoulder_lift_joint",
-    "elbow_joint",
-    "wrist_1_joint",
-    "wrist_2_joint",
-    "wrist_3_joint",
-]
+# ARM_JOINT_NAMES = [
+#     "shoulder_pan_joint",
+#     "shoulder_lift_joint",
+#     "elbow_joint",
+#     "wrist_1_joint",
+#     "wrist_2_joint",
+#     "wrist_3_joint",
+# ]
 
 class MujocoRosBridge(Node):
     def __init__(self, model, data):
@@ -44,7 +46,12 @@ class MujocoRosBridge(Node):
             self.joint_qpos_addr.append(self.model.jnt_qposadr[joint_id])
             self.joint_qvel_addr.append(self.model.jnt_dofadr[joint_id])
 
-        self.joint_sub = self.create_subscription(JointState, '/next_joint_states', self.receive_states, 10)
+        self.joint_sub = self.create_subscription(
+            JointTrajectory, 
+            '/joint_trajectory_controller/joint_trajectory', 
+            self.receive_states, 
+            10
+        )
         self.timer = self.create_timer(0.02, self.publish_states)
 
     def receive_states(self, msg):
