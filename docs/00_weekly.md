@@ -78,6 +78,9 @@
 
 **Progress this week**
 - plan and execute by MoveIt and visualization in Mujoco
+- ![alt text](figures/rqt_graph.png)
+
+- [TF tree here](figures/frames_2026-06-27_04.59.17.pdf)
 
 **Challenges & blockers**
 - 
