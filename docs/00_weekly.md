@@ -58,16 +58,34 @@
 **Attended this week's meeting:** Yes 
 
 **Progress this week**
-- _What did you actually do / finish?_
+- build proper TF tree
 
 **Challenges & blockers**
-- _What got in the way? What are you stuck on?_
+- 
+
+**Next steps**
+- plan and execute 
+
+**Hours spent (optional):** 
+
+**Links (optional):** 
+
+---
+
+### Week 3 — 2026-06-22
+
+**Attended this week's meeting:** Yes
+
+**Progress this week**
+- plan and execute by MoveIt and visualization in Mujoco
+
+**Challenges & blockers**
+- 
 
 **Next steps**
 - _What will you do next week?_
 
-**Hours spent (optional):** _e.g. 6h_
+**Hours spent (optional):** 
 
-**Links (optional):** _commits, notebooks, docs, datasets..._
-
+**Links (optional):** 
 ---
