@@ -39,6 +39,10 @@ secrets.*
 .agent/
 .codex
 
-.github
-.vscode
-log
+
+# 忽略 colcon 编译生成的临时和产物文件夹
+build/
+install/
+log/
+.github/
+.vscode/
